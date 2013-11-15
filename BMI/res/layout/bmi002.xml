@@ -5,43 +5,47 @@
 
     <Button
         android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="62dp"
+        android:layout_height="60dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
+        android:textSize="10dp"
         android:text="BMI" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="62dp"
+        android:layout_height="60dp"
         android:layout_alignParentBottom="true"
         android:layout_toRightOf="@+id/button1"
+        android:textSize="10dp"
         android:text="輸入飲食" />
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="62dp"
+        android:layout_height="60dp"
         android:layout_alignParentBottom="true"
         android:layout_toRightOf="@+id/button2"
+        android:textSize="10dp"
         android:text="熱量參考" />
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="62dp"
+        android:layout_height="60dp"
         android:layout_alignParentBottom="true"
         android:layout_toRightOf="@+id/button3"
+        android:textSize="10dp"
         android:text="統計表" />
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="62dp"
+        android:layout_height="60dp"
         android:layout_alignParentBottom="true"
         android:layout_toRightOf="@+id/button4"
-        android:layout_weight="1"
+        android:textSize="10dp"
         android:text="設置" />
 
     <LinearLayout

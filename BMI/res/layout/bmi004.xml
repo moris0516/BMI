@@ -7,43 +7,47 @@
     
         <Button
         android:id="@+id/button1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="62dp"
+        android:layout_height="60dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
+        android:textSize="10dp"
         android:text="BMI" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="62dp"
+        android:layout_height="60dp"
         android:layout_alignParentBottom="true"
         android:layout_toRightOf="@+id/button1"
+        android:textSize="10dp"
         android:text="輸入飲食" />
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="62dp"
+        android:layout_height="60dp"
         android:layout_alignParentBottom="true"
         android:layout_toRightOf="@+id/button2"
+        android:textSize="10dp"
         android:text="熱量參考" />
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="62dp"
+        android:layout_height="60dp"
         android:layout_alignParentBottom="true"
         android:layout_toRightOf="@+id/button3"
+        android:textSize="10dp"
         android:text="統計表" />
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="62dp"
+        android:layout_height="60dp"
         android:layout_alignParentBottom="true"
         android:layout_toRightOf="@+id/button4"
-        android:layout_weight="1"
+        android:textSize="10dp"
         android:text="設置" />
 
     <TextView
@@ -52,7 +56,17 @@
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="158dp"
+        android:layout_marginTop="100dp"
+        android:text="程式說明:"
+        android:textSize="27sp" />
+    
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="180dp"
         android:text="資料來源:行政院衛生署"
         android:textSize="27sp" />
 
