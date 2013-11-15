@@ -1,0 +1,30 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.practice.bmi"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="8"
+        android:targetSdkVersion="15" />
+
+    <application
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".BMI"
+            android:label="@string/title_activity_bmi" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="BMI001"></activity>
+        <activity android:name="BMI002"></activity>
+        <activity android:name="BMI003"></activity>
+        <activity android:name="BMI004"></activity>
+        <activity android:name="Addfood"></activity>
+    </application>
+
+</manifest>
