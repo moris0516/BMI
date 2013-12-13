@@ -35,7 +35,7 @@ public class BMI extends Activity {
 				intent.setClass(BMI.this, BMI001.class);
 				intent.putExtras(bundle);
 				startActivity(intent);
-			}
+			}	
 		});
         
         button3.setOnClickListener(new Button.OnClickListener() {
@@ -45,6 +45,7 @@ public class BMI extends Activity {
 				intent.setClass(BMI.this, BMI002.class);
 				intent.putExtras(bundle);
 				startActivity(intent);
+				finish();
 			}
 		});
         
@@ -55,6 +56,7 @@ public class BMI extends Activity {
 				intent.setClass(BMI.this, BMI003.class);
 				intent.putExtras(bundle);
 				startActivity(intent);
+				finish();
 			}
 		});
         
@@ -65,6 +67,7 @@ public class BMI extends Activity {
 				intent.setClass(BMI.this, BMI004.class);
 				intent.putExtras(bundle);
 				startActivity(intent);
+				finish();
 			}
 		});
         

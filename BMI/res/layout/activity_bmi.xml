@@ -1,22 +1,25 @@
 <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="match_parent" >
+    android:layout_height="match_parent" 
+    android:background="@drawable/scales" >
 
     <TextView
         android:id="@+id/textHeight"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/bmi_height" />
+        android:text="@string/bmi_height"
+        android:textSize="30dp" />
 
     <EditText
         android:id="@+id/inputHeight"
         style="editTextStyle"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/textHeight"
-        android:inputType="number" />
+        android:inputType="number"
+        android:textSize="30dp" />
 
     <TextView
         android:id="@+id/textWeight"
@@ -24,82 +27,89 @@
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/inputHeight"
-        android:text="@string/bmi_weight" />
+        android:text="@string/bmi_weight" 
+        android:textSize="30dp"/>
 
     <EditText
         android:id="@+id/inputWeight"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="50dp"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/textWeight"
         android:ems="10"
-        android:inputType="number" />
+        android:inputType="number"
+        android:textSize="30dp" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:textSize="35dp"
+        android:text="BMI" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/button1"
+        android:textSize="35dp"
+        android:text="輸入飲食" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/button2"
+        android:textSize="35dp"
+        android:text="熱量參考" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/button3"
+        android:textSize="30dp"
+        android:text="統計表" />
+
+    <Button
+        android:id="@+id/button5"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/button4"
+        android:textSize="35dp"
+        android:text="運動紀錄" />
 
     <Button
         android:id="@+id/buttonCalculate"
         android:layout_width="fill_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="100dp"
         android:layout_alignParentLeft="true"
         android:layout_below="@+id/inputWeight"
-        android:text="@string/bmi_calculate" />
+        android:layout_marginTop="46dp"
+        android:text="@string/bmi_calculate"
+        android:textSize="35dp" />
 
     <TextView
         android:id="@+id/textResult"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/buttonCalculate" />
+        android:layout_below="@+id/buttonCalculate"
+        android:layout_marginTop="50dp"
+        android:textSize="40dp" />
 
     <TextView
         android:id="@+id/textSuggest"
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentLeft="true"
-        android:layout_below="@+id/textResult" />
-
-    <Button
-        android:id="@+id/button1"
-        android:layout_width="62dp"
-        android:layout_height="60dp"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentLeft="true"
-        android:textSize="10dp"
-        android:text="BMI" />
-
-    <Button
-        android:id="@+id/button2"
-        android:layout_width="62dp"
-        android:layout_height="60dp"
-        android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/button1"
-        android:textSize="10dp"
-        android:text="輸入飲食" />
-
-    <Button
-        android:id="@+id/button3"
-        android:layout_width="62dp"
-        android:layout_height="60dp"
-        android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/button2"
-        android:textSize="10dp"
-        android:text="熱量參考" />
-
-    <Button
-        android:id="@+id/button4"
-        android:layout_width="62dp"
-        android:layout_height="60dp"
-        android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/button3"
-        android:textSize="10dp"
-        android:text="統計表" />
-
-    <Button
-        android:id="@+id/button5"
-        android:layout_width="62dp"
-        android:layout_height="60dp"
-        android:layout_alignParentBottom="true"
-        android:layout_toRightOf="@+id/button4"
-        android:textSize="10dp"
-        android:text="設置" />
+        android:layout_below="@+id/textResult"
+        android:textSize="40dp" />
 
 </RelativeLayout>

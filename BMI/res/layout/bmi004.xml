@@ -2,72 +2,186 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent" >
-    
-    
-    
-        <Button
+
+    <Button
         android:id="@+id/button1"
-        android:layout_width="62dp"
-        android:layout_height="60dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:layout_alignParentBottom="true"
         android:layout_alignParentLeft="true"
-        android:textSize="10dp"
-        android:text="BMI" />
+        android:text="BMI"
+        android:textSize="35dp" />
 
     <Button
         android:id="@+id/button2"
-        android:layout_width="62dp"
-        android:layout_height="60dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:layout_alignParentBottom="true"
         android:layout_toRightOf="@+id/button1"
-        android:textSize="10dp"
-        android:text="輸入飲食" />
+        android:text="輸入飲食"
+        android:textSize="35dp" />
 
     <Button
         android:id="@+id/button3"
-        android:layout_width="62dp"
-        android:layout_height="60dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:layout_alignParentBottom="true"
         android:layout_toRightOf="@+id/button2"
-        android:textSize="10dp"
-        android:text="熱量參考" />
+        android:text="熱量參考"
+        android:textSize="35dp" />
 
     <Button
         android:id="@+id/button4"
-        android:layout_width="62dp"
-        android:layout_height="60dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:layout_alignParentBottom="true"
         android:layout_toRightOf="@+id/button3"
-        android:textSize="10dp"
-        android:text="統計表" />
+        android:text="統計表"
+        android:textSize="30dp" />
 
     <Button
         android:id="@+id/button5"
-        android:layout_width="62dp"
-        android:layout_height="60dp"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
         android:layout_alignParentBottom="true"
         android:layout_toRightOf="@+id/button4"
-        android:textSize="10dp"
-        android:text="設置" />
+        android:text="運動紀錄"
+        android:textSize="35dp" />
 
-    <TextView
-        android:id="@+id/textView1"
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout1"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="輸入運動時間" 
+            android:textSize="30dp"/>
+
+        <EditText
+            android:id="@+id/edtSex"
+            android:layout_width="290dp"
+            android:layout_height="50dp"
+            android:textSize="30dp"/>
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="分鐘"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:textSize="30dp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout4"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout3"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="輸入消耗熱量" 
+            android:textSize="30dp"/>
+
+        <EditText
+            android:id="@+id/edtAddr"
+            android:layout_width="290dp"
+            android:layout_height="50dp"
+            android:textSize="30dp"/>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="大卡"
+            android:textAppearance="?android:attr/textAppearanceMedium" 
+            android:textSize="30dp"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout4"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="170dp"
+            android:layout_height="70dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="加入" 
+            android:textSize="30dp"/>
+
+        <Button
+            android:id="@+id/btnQuery"
+            android:layout_width="170dp"
+            android:layout_height="70dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="查詢" 
+            android:textSize="30dp"/>
+
+        <Button
+            android:id="@+id/btnList"
+            android:layout_width="170dp"
+            android:layout_height="70dp"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:text="列表" 
+            android:textSize="30dp"/>
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edtList"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/linearLayout2"
+        android:ems="10" 
+        android:textSize="30dp"/>
+
+    <ImageView
+        android:id="@+id/imageView1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="100dp"
-        android:text="程式說明:"
-        android:textSize="27sp" />
-    
-    <TextView
-        android:id="@+id/textView1"
-        android:layout_width="wrap_content"
+        android:src="@drawable/jog" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="180dp"
-        android:text="資料來源:行政院衛生署"
-        android:textSize="27sp" />
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/imageView1"
+        android:layout_marginTop="20dp"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="輸入運動名稱" 
+            android:textSize="30dp"/>
+
+        <EditText
+            android:id="@+id/edtName"
+            android:layout_width="290dp"
+            android:layout_height="50dp"
+            android:ems="10"
+            android:textSize="30dp" />
+
+    </LinearLayout>
 
 </RelativeLayout>

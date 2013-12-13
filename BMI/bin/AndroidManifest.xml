@@ -14,19 +14,24 @@
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
-            android:name="com.example.bmi_1.BMI"
+            android:name="com.example.bmi_1.welcome"
             android:label="@string/app_name" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
-        </activity>
+        </activity><activity android:name="BMI"></activity>
         <activity android:name="Addfood"></activity>
         <activity android:name="BMI001"></activity>
-        <activity android:name="BMI002"></activity>
-        <activity android:name="BMI003"></activity>
+        <activity android:name="BMI002"></activity><activity android:name="BMI003"></activity>
         <activity android:name="BMI004"></activity>
+        <activity android:name="BMI0021"></activity>
+        <activity android:name="BMI0022"></activity>
+        <activity android:name="BMI0023"></activity>
+        
+        
+        
     </application>
 
 </manifest>
